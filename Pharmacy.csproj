@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Pharmacy_Classes.cs" />
     <Compile Include="DAL\DataLayer.cs" />
     <Compile Include="PL\MainForm.cs">
       <SubType>Form</SubType>
@@ -126,9 +127,7 @@
   <ItemGroup>
     <None Include="_Pictures\settings32.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Properties\close icon1.png" />
   </ItemGroup>
