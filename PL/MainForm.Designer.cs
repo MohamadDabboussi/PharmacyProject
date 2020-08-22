@@ -82,6 +82,7 @@
             this.BtnSuppliers = new System.Windows.Forms.Button();
             this.BtnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelForms = new System.Windows.Forms.TableLayoutPanel();
             this.TabHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRestore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -714,6 +715,7 @@
             this.BtnInvoice.TabIndex = 11;
             this.BtnInvoice.Text = "Invoice";
             this.BtnInvoice.UseVisualStyleBackColor = true;
+            this.BtnInvoice.Click += new System.EventHandler(this.BtnInvoice_Click);
             // 
             // panel4
             // 
@@ -800,6 +802,7 @@
             this.BtnHome.TabIndex = 5;
             this.BtnHome.Text = "home";
             this.BtnHome.UseVisualStyleBackColor = true;
+            this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
             // pictureBox1
             // 
@@ -814,11 +817,26 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // PanelForms
+            // 
+            this.PanelForms.ColumnCount = 1;
+            this.PanelForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PanelForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelForms.Location = new System.Drawing.Point(283, 35);
+            this.PanelForms.Name = "PanelForms";
+            this.PanelForms.RowCount = 1;
+            this.PanelForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PanelForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PanelForms.Size = new System.Drawing.Size(1217, 965);
+            this.PanelForms.TabIndex = 2;
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1500, 1000);
+            this.Controls.Add(this.PanelForms);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.TabHorizontal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -902,6 +920,7 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button BtnSalesReports;
         public System.Windows.Forms.Panel panelReports;
+        private System.Windows.Forms.TableLayoutPanel PanelForms;
     }
 }
 

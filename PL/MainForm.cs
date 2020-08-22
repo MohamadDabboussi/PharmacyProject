@@ -8,17 +8,21 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Pharmacy.PL;
 
 namespace Pharmacy
 {
     public partial class Main : Form
     {
+        InvoiceForm invoiceF;
+        HomeForm homeF;
+       
+        
+        
         public Main()
         {
             InitializeComponent();
         }
-
-
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -67,6 +71,25 @@ namespace Pharmacy
         {
             DesignFunctions.ShowHideReportsOptions(panelReports);
         }
+
+
+
+        private bool InvoiceForm()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnInvoice_Click(object sender, EventArgs e)
+        {
+            if(invoiceF==null) invoiceF = new PL.InvoiceForm();
+            DesignFunctions.ShowFormsInPanelForms(invoiceF, PanelForms);
+        }
+
+        private void BtnHome_Click(object sender, EventArgs e)
+        {
+            if(homeF==null)  homeF = new PL.HomeForm();
+            DesignFunctions.ShowFormsInPanelForms(homeF, PanelForms);
+        }
     }
 
     class DesignFunctions
@@ -88,5 +111,28 @@ namespace Pharmacy
             SendMessage(form.Handle, 0x112, 0xf012, 0);
         }
 
+        public static void ClearPanelForms(Panel panel) 
+        {
+            for (int i = 0; i < panel.Controls.Count; i++) 
+            { panel.Controls[i].Hide(); }
+        }
+
+        public static void ShowFormsInPanelForms(Form f,Panel p)
+        {
+            if (f.Visible == true) { }
+            else
+            {
+                DesignFunctions.ClearPanelForms(p);
+                if (p.Controls.Contains(f)==false)
+                { 
+                    f.TopLevel = false;
+                    f.Size = p.Size;
+                    p.Controls.Add(f);
+                    f.Dock = DockStyle.Fill;
+                    f.Show();
+                }
+                else {   f.Visible = true;  }
+            }
+        }
     }
 }
