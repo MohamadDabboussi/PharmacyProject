@@ -14,11 +14,12 @@ namespace Pharmacy
 {
     public partial class Main : Form
     {
+        private bool IsCollapsed;
         InvoiceForm invoiceF;
         HomeForm homeF;
-       
-        
-        
+
+
+
         public Main()
         {
             InitializeComponent();
@@ -59,17 +60,17 @@ namespace Pharmacy
 
         private void BtnReports_Click(object sender, EventArgs e)
         {
-            DesignFunctions.ShowHideReportsOptions(panelReports);
+            DesignFunctions.ShowHideReportsOptions(PanelReports);
         }
 
         private void BtnSalesReports_Click(object sender, EventArgs e)
         {
-            DesignFunctions.ShowHideReportsOptions(panelReports);
+            DesignFunctions.ShowHideReportsOptions(PanelReports);
         }
 
         private void BtnBuyReports_Click(object sender, EventArgs e)
         {
-            DesignFunctions.ShowHideReportsOptions(panelReports);
+            DesignFunctions.ShowHideReportsOptions(PanelReports);
         }
 
 
@@ -81,58 +82,71 @@ namespace Pharmacy
 
         private void BtnInvoice_Click(object sender, EventArgs e)
         {
-            if(invoiceF==null) invoiceF = new PL.InvoiceForm();
+            if (invoiceF == null) invoiceF = new PL.InvoiceForm();
             DesignFunctions.ShowFormsInPanelForms(invoiceF, PanelForms);
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            if(homeF==null)  homeF = new PL.HomeForm();
+            if (homeF == null) homeF = new PL.HomeForm();
             DesignFunctions.ShowFormsInPanelForms(homeF, PanelForms);
+        }
+
+
+        private void BtnReports_BClick(object sender, EventArgs e)
+        {
+            if (PanelReports.Size == PanelReports.MinimumSize)
+                PanelReports.Size = PanelReports.MaximumSize;
+            else PanelReports.Size = PanelReports.MinimumSize;
+
+
         }
     }
 
     class DesignFunctions
-    {
-        // Show or Hide Sub Reports
-        public static void ShowHideReportsOptions(Panel panel)
-        { if (panel.Visible == false) panel.Visible = true;
-            else panel.Visible = false;
-        }
-
-        //Move Form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        public static void MoveForm(Form form) 
         {
-            ReleaseCapture();
-            SendMessage(form.Handle, 0x112, 0xf012, 0);
-        }
-
-        public static void ClearPanelForms(Panel panel) 
-        {
-            for (int i = 0; i < panel.Controls.Count; i++) 
-            { panel.Controls[i].Hide(); }
-        }
-
-        public static void ShowFormsInPanelForms(Form f,Panel p)
-        {
-            if (f.Visible == true) { }
-            else
+            // Show or Hide Sub Reports
+            public static void ShowHideReportsOptions(Panel panel)
             {
-                DesignFunctions.ClearPanelForms(p);
-                if (p.Controls.Contains(f)==false)
-                { 
-                    f.TopLevel = false;
-                    f.Size = p.Size;
-                    p.Controls.Add(f);
-                    f.Dock = DockStyle.Fill;
-                    f.Show();
-                }
-                else {   f.Visible = true;  }
+                if (panel.Visible == false) panel.Visible = true;
+                else panel.Visible = false;
             }
+
+            //Move Form
+            [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+            private extern static void ReleaseCapture();
+            [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+            private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+            public static void MoveForm(Form form)
+            {
+                ReleaseCapture();
+                SendMessage(form.Handle, 0x112, 0xf012, 0);
+            }
+
+            public static void ClearPanelForms(Panel panel)
+            {
+                for (int i = 0; i < panel.Controls.Count; i++)
+                { panel.Controls[i].Hide(); }
+            }
+
+            public static void ShowFormsInPanelForms(Form f, Panel p)
+            {
+                if (f.Visible == true) { }
+                else
+                {
+                    DesignFunctions.ClearPanelForms(p);
+                    if (p.Controls.Contains(f) == false)
+                    {
+                        f.TopLevel = false;
+                        f.Size = p.Size;
+                        p.Controls.Add(f);
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                    }
+                    else { f.Visible = true; }
+                }
+            }
+
         }
     }
-}
+
