@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pharmacy.PL
+namespace Pharmacy.PL.Controls
 {
-    public partial class InvoiceForm : Form
+    public partial class DataGridViewDesignsForm : Form
     {
-        public InvoiceForm()
+        public DataGridViewDesignsForm()
         {
             InitializeComponent();
         }
-
- 
     }
 }

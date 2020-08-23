@@ -16,5 +16,6 @@ namespace Pharmacy.PL
         {
             InitializeComponent();
         }
+       
     }
 }
