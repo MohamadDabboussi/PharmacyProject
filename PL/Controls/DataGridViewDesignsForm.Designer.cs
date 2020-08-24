@@ -38,37 +38,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dropDownButton2 = new Pharmacy.PL.Controls.DropDownButton();
+            this.dropDownButton1 = new Pharmacy.PL.Controls.DropDownButton();
             this.dataGridView11 = new Pharmacy.PL.Controls.DataGridView1();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuCustomDataGrid1
             // 
+            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
@@ -92,22 +80,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeight = 40;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14,
-            this.Column15});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,7 +93,7 @@
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(32, 634);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(32, 647);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -141,112 +113,101 @@
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1097, 401);
             this.bunifuCustomDataGrid1.TabIndex = 5;
             // 
-            // Column1
+            // panel1
             // 
-            this.Column1.DividerWidth = 2;
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column1.Width = 152;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Location = new System.Drawing.Point(430, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(352, 322);
+            this.panel1.TabIndex = 7;
+            this.panel1.Visible = false;
             // 
-            // Column2
+            // button1
             // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 43);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Select";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Column3
+            // comboBox1
             // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 16;
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(352, 233);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // Column4
+            // button2
             // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
+            this.button2.Location = new System.Drawing.Point(505, 341);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(191, 44);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Add new medecine";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button2_KeyDown);
             // 
-            // Column5
+            // button3
             // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
+            this.button3.Location = new System.Drawing.Point(527, 566);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 53);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Column6
+            // dropDownButton2
             // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
+            this.dropDownButton2.BHeaderImage = null;
+            this.dropDownButton2.BHeaderText = "Reports";
+            this.dropDownButton2.Location = new System.Drawing.Point(80, 321);
+            this.dropDownButton2.MaximumSize = new System.Drawing.Size(281, 298);
+            this.dropDownButton2.MinimumSize = new System.Drawing.Size(281, 60);
+            this.dropDownButton2.Name = "dropDownButton2";
+            this.dropDownButton2.Size = new System.Drawing.Size(281, 298);
+            this.dropDownButton2.SubButtonsNames = new string[] {
+        null,
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""};
+            this.dropDownButton2.SubButtonsNumber = 7;
+            this.dropDownButton2.TabIndex = 1;
             // 
-            // Column7
+            // dropDownButton1
             // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 150;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 150;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 150;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Column10";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 163;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Column11";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 163;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Column12";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 163;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Column13";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 163;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Column14";
-            this.Column14.MinimumWidth = 6;
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 163;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "Column15";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 163;
+            this.dropDownButton1.BHeaderImage = null;
+            this.dropDownButton1.BHeaderText = "Header Text";
+            this.dropDownButton1.Location = new System.Drawing.Point(-28, -57);
+            this.dropDownButton1.MaximumSize = new System.Drawing.Size(281, 60);
+            this.dropDownButton1.MinimumSize = new System.Drawing.Size(281, 60);
+            this.dropDownButton1.Name = "dropDownButton1";
+            this.dropDownButton1.Size = new System.Drawing.Size(281, 60);
+            this.dropDownButton1.SubButtonsNames = new string[0];
+            this.dropDownButton1.SubButtonsNumber = 0;
+            this.dropDownButton1.TabIndex = 10;
             // 
             // dataGridView11
             // 
@@ -256,6 +217,7 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView11.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView11.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.dataGridView11.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dataGridView11.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -269,15 +231,9 @@
             this.dataGridView11.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView11.ColumnHeadersHeight = 40;
             this.dataGridView11.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column16,
-            this.Column17,
-            this.Column18,
-            this.Column19,
-            this.Column20,
-            this.Column21,
-            this.Column22,
-            this.Column23,
-            this.Column24});
+            this.ID,
+            this._Name,
+            this.Price});
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -288,7 +244,7 @@
             this.dataGridView11.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView11.EnableHeadersVisualStyles = false;
             this.dataGridView11.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.dataGridView11.Location = new System.Drawing.Point(32, 241);
+            this.dataGridView11.Location = new System.Drawing.Point(32, 0);
             this.dataGridView11.Name = "dataGridView11";
             this.dataGridView11.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -307,79 +263,41 @@
             this.dataGridView11.Size = new System.Drawing.Size(1097, 322);
             this.dataGridView11.TabIndex = 6;
             // 
-            // Column16
+            // ID
             // 
-            this.Column16.HeaderText = "Column16";
-            this.Column16.MinimumWidth = 6;
-            this.Column16.Name = "Column16";
-            this.Column16.Width = 125;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
             // 
-            // Column17
+            // _Name
             // 
-            this.Column17.HeaderText = "Column17";
-            this.Column17.MinimumWidth = 6;
-            this.Column17.Name = "Column17";
-            this.Column17.Width = 125;
+            this._Name.HeaderText = "Name";
+            this._Name.MinimumWidth = 6;
+            this._Name.Name = "_Name";
             // 
-            // Column18
+            // Price
             // 
-            this.Column18.HeaderText = "Column18";
-            this.Column18.MinimumWidth = 6;
-            this.Column18.Name = "Column18";
-            this.Column18.Width = 125;
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "Column19";
-            this.Column19.MinimumWidth = 6;
-            this.Column19.Name = "Column19";
-            this.Column19.Width = 125;
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "Column20";
-            this.Column20.MinimumWidth = 6;
-            this.Column20.Name = "Column20";
-            this.Column20.Width = 125;
-            // 
-            // Column21
-            // 
-            this.Column21.HeaderText = "Column21";
-            this.Column21.MinimumWidth = 6;
-            this.Column21.Name = "Column21";
-            this.Column21.Width = 125;
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "Column22";
-            this.Column22.MinimumWidth = 6;
-            this.Column22.Name = "Column22";
-            this.Column22.Width = 125;
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "Column23";
-            this.Column23.MinimumWidth = 6;
-            this.Column23.Name = "Column23";
-            this.Column23.Width = 125;
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Column24";
-            this.Column24.MinimumWidth = 6;
-            this.Column24.Name = "Column24";
-            this.Column24.Width = 125;
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
             // 
             // DataGridViewDesignsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 1055);
+            this.Controls.Add(this.dropDownButton2);
+            this.Controls.Add(this.dropDownButton1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView11);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Name = "DataGridViewDesignsForm";
             this.Text = "DataGridViewDesignsForm";
+            this.Load += new System.EventHandler(this.DataGridViewDesignsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
             this.ResumeLayout(false);
 
@@ -388,30 +306,16 @@
         #endregion
 
         private DataGridView1 dataGridView11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         public Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Button button3;
+        private DropDownButton dropDownButton1;
+        private DropDownButton dropDownButton2;
     }
 }

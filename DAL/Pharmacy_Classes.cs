@@ -5,13 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pharmacy.BL
+
+namespace Pharmacy.DAL
 {
+
     class Medecines
     {
         public Medecines()
         {
         }
+
+        #region properties
 
         public string ATC { get; set; }
         public string B_G { get; set; }
@@ -20,7 +24,7 @@ namespace Pharmacy.BL
         public string Name { get; set; }
         public string Dosage { get; set; }
         public string Volume { get; set; }
-        public Nullable<int> Form { get; set; }
+        public Nullable<int> m_form { get; set; }
         public string Way_of_use { get; set; }
         public Nullable<int> Supplier { get; set; }
         public string Laboratory { get; set; }
@@ -33,14 +37,28 @@ namespace Pharmacy.BL
         public string Responsible_Party_Country { get; set; }
         public Nullable<System.DateTime> Exch_date { get; set; }
 
-        public virtual Form Form1 { get; set; }
+        public virtual M_form M_form { get; set; }
         public virtual DataTable InvoiceDetails { get; set; }
         public virtual Supplier Supplier1 { get; set; }
         public virtual DataTable SalesDetails { get; set; }
+
+        #endregion
+
+        #region functions
+        public static DataTable GetMedecines(DataLayer dt) 
+        {
+            DataTable medecines=  dt.GetData_StoredProcedure("GetMedecinesTest", "Medecines");
+            return medecines;
+        }
+
+
+        #endregion
+
+
     }
-    class Form
+    class M_form
     {
-        public Form()
+        public M_form()
         {
         }
 

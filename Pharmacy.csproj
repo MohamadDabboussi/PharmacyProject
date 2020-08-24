@@ -73,11 +73,35 @@
     <Compile Include="PL\Controls\DataGridViewDesignsForm.Designer.cs">
       <DependentUpon>DataGridViewDesignsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Controls\DropDownButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\DropDownButton.Designer.cs">
+      <DependentUpon>DropDownButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Controls\HomeButton1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PL\Controls\HomeButton1.Designer.cs">
       <DependentUpon>HomeButton1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Controls\HomeButtonMirror1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\HomeButtonMirror1.Designer.cs">
+      <DependentUpon>HomeButtonMirror1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Controls\NButton1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\NButton1.Designer.cs">
+      <DependentUpon>NButton1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Controls\SubHomeButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\SubHomeButton.Designer.cs">
+      <DependentUpon>SubHomeButton.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\HomeForm.cs">
       <SubType>Form</SubType>
@@ -97,6 +121,12 @@
     <Compile Include="PL\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\SupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SupplierForm.Designer.cs">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\Controls\DataGridView1.resx">
@@ -108,8 +138,20 @@
     <EmbeddedResource Include="PL\Controls\DataGridViewDesignsForm.resx">
       <DependentUpon>DataGridViewDesignsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\DropDownButton.resx">
+      <DependentUpon>DropDownButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Controls\HomeButton1.resx">
       <DependentUpon>HomeButton1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\HomeButtonMirror1.resx">
+      <DependentUpon>HomeButtonMirror1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\NButton1.resx">
+      <DependentUpon>NButton1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\SubHomeButton.resx">
+      <DependentUpon>SubHomeButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
@@ -119,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SupplierForm.resx">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -205,6 +250,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="_Pictures\icons8-online-payment-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\icons8-double-right-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\icons8-right-arrow-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\icons8-wide-long-left-arrow-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\icons8-double-left-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

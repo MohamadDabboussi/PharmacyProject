@@ -118,38 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="charts32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\charts32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>close icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\home32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_online_payment_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\icons8-online-payment-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_pill_bottle_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\icons8-pill-bottle-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="invoice3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\invoice3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maximizeIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>maximizeIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minusIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>minusIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reports32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\reports32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PharmacyLOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\_Pictures\PharmacyLOGO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pharmaLOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>pharmaLOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="charts32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\charts32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reports32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\reports32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_online_payment_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-online-payment-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-wide-long-left-arrow-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-wide-long-left-arrow-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="restoreIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\_Pictures\restoreIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,10 +139,40 @@
   <data name="sales32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\_Pictures\sales32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\_Pictures\settings32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_pill_bottle_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-pill-bottle-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-double-right-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-double-right-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pharmaLOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>pharmaLOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minusIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>minusIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-right-arrow-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-right-arrow-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>close icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="supplier32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\_Pictures\supplier32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\home32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\settings32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximizeIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>maximizeIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\invoice3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-double-left-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\_Pictures\icons8-double-left-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -5,7 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace TP5
+namespace Pharmacy.DAL
 {
     public class DataLayer
     {
@@ -53,7 +53,7 @@ namespace TP5
             return database_name;
         }
         
-        public int ExecuteActionCommand(string CommandText)
+        public int ExecuteActionCommand_Query(string CommandText)
         {
             int rep = 0;
             
@@ -73,7 +73,7 @@ namespace TP5
             }
             return rep;
         }
-        public object GetValue(string SqlText)
+        public object GetValue_Query(string SqlText)
         {
             if ((IsValid)&&(SqlText.Length>0))
             {
@@ -95,7 +95,7 @@ namespace TP5
         }
 
 
-       public DataTable GetData(string SqlText, object[,] Parameters, string name)
+       public DataTable GetData_StoredProcedure(string SqlText, object[,] Parameters, string name)
         {
             DataTable dt = new DataTable();
             if (IsValid)
@@ -122,8 +122,32 @@ namespace TP5
             }
             else return null;
         }
+        public DataTable GetData_StoredProcedure(string SqlText, string name)
+        {
+            DataTable dt = new DataTable();
+            if (IsValid)
+            {
+                SqlCommand com = new SqlCommand(SqlText, con);
+                com.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter data_adapter = new SqlDataAdapter(com);
+                con.Open();
+                try
+                {
+                    data_adapter.Fill(dt);
+                }
+                catch (SqlException e)
+                {
+                    MessageBox.Show(e.Message);
+                    dt = null;
+                }
+                con.Close();
+                dt.TableName = name;
+                return dt;
+            }
+            else return null;
+        }
 
-        public void ExecuteActionCommand(string CommandText, object[,] Parameters)
+        public void ExecuteActionCommand_StoredProcedure(string CommandText, object[,] Parameters)
         {
             if (IsValid)
             {
@@ -147,7 +171,7 @@ namespace TP5
             }
         }
 
-        public object GetValue(string SqlText, object[,] Parameters) 
+        public object GetValue_Query(string SqlText, object[,] Parameters) 
         {
             object v = null;
             if (IsValid)
@@ -181,7 +205,7 @@ namespace TP5
             else return null;
         }
 
-        public DataTable GetData(string SqlText, string name)
+        public DataTable GetData_Query(string SqlText, string name)
         {
             DataTable dt = new DataTable(); 
             if (IsValid)
