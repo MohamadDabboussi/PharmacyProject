@@ -15,8 +15,22 @@ namespace Pharmacy.PL
         public InvoiceForm()
         {
             InitializeComponent();
+            
+        }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
         }
 
- 
+        private void BtnAddNew_Click(object sender, EventArgs e)
+        {
+            myComboBox11.Show();
+            myComboBox11.BringToFront();
+        }
     }
 }

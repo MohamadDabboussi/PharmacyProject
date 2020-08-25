@@ -117,46 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Medecine.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VAT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PublicPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Margin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TotalPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BtnAddNew.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPwAAAA7CAYAAABfRudrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJqSURBVHhe7d1da9NQGMBxP5C0a9O0SVq6KlItY9VOnFei
-        zhem3onTsfnCUHFXKwQcBFboN33ck2Bd6eOumzz/i9/VOTm9+icnpxe5MZ/PBYAPBA84QvCAIwQPOELw
-        gCMEDzhybfAXs5kcHh3LeLIjt4d3pZ305GYjALBGtEvtczS+LwcfP0mWZWbP6r/Bfzs5kTDuSrMTmT8C
-        YP1or60okfcfDsyuV4LXu8Pk0a4ElxdZCwJYf9rvcLQlv8/Pl/peCl5jT/qbUm+G5iIAyiXuDyRNUzt4
-        fbITO1At+n6/Ery+s7ONB6qn0Y7k9f6bf8Hrabwe0FmTAZRfGCdyNp0WwetRPqfxQHXVglCe7r0ogtf/
-        76xJAKqjO7hVBB/1+uYEANVRa7aK4DfCjjkBQLXkwVsDAKqH4AFHCB5whOABRwgecITgAUcIHnCE4AFH
-        CB5whOABRwgecITgAUcIHnCE4AFHCB5whOABRwgecITgAUcIHnCE4AFHCB5whOABRwgecITgAUcIHnCE
-        4AFH8uD1m1PWIIBqyYNvJz1zEEC15MEPR1vmIIDq0K9E58Hvv30n9VbbnASgGh7uPi6CT9NUgigxJwEo
-        vyCK5fOXr0Xw6tnLV9JoR+ZkAOVVC0LZfjDJO18EfzGbyeDO0LwAQHnpoXyWZcvBq7PpVMKka14EoHxa
-        cVe+//i5aHwpePXr9FSS/qZshB1zAQDrr365jdcn+9XY1UrwSrf3T57vcZAHlFCzE8m97fFiG3+VGfxf
-        enfQo/ygE5sLA1gfuisfT3bk8OjY7FldGzyAaiF4wBGCBxwheMARggfcmMsfoGmGsT4rSBcAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
 </root>

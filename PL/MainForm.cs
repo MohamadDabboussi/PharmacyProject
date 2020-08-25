@@ -22,6 +22,19 @@ namespace Pharmacy.PL
         {
             InitializeComponent();
         }
+
+        //fast open form
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
+
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -56,27 +69,7 @@ namespace Pharmacy.PL
             DesignFunctions.MoveForm(this);
         }
 
-        private void BtnReports_Click(object sender, EventArgs e)
-        {
-            DesignFunctions.ShowHideReportsOptions(PanelReports);
-        }
 
-        private void BtnSalesReports_Click(object sender, EventArgs e)
-        {
-            DesignFunctions.ShowHideReportsOptions(PanelReports);
-        }
-
-        private void BtnBuyReports_Click(object sender, EventArgs e)
-        {
-            DesignFunctions.ShowHideReportsOptions(PanelReports);
-        }
-
-
-
-        private bool InvoiceForm()
-        {
-            throw new NotImplementedException();
-        }
 
         private void BtnInvoice_Click(object sender, EventArgs e)
         {
@@ -101,50 +94,6 @@ namespace Pharmacy.PL
         }
     }
 
-    class DesignFunctions
-        {
-            // Show or Hide Sub Reports
-            public static void ShowHideReportsOptions(Panel panel)
-            {
-                if (panel.Visible == false) panel.Visible = true;
-                else panel.Visible = false;
-            }
-
-            //Move Form
-            [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-            private extern static void ReleaseCapture();
-            [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-            private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-            public static void MoveForm(Form form)
-            {
-                ReleaseCapture();
-                SendMessage(form.Handle, 0x112, 0xf012, 0);
-            }
-
-            public static void ClearPanelForms(Panel panel)
-            {
-                for (int i = 0; i < panel.Controls.Count; i++)
-                { panel.Controls[i].Hide(); }
-            }
-
-            public static void ShowFormsInPanelForms(Form f, Panel p)
-            {
-                if (f.Visible == true) { }
-                else
-                {
-                    DesignFunctions.ClearPanelForms(p);
-                    if (p.Controls.Contains(f) == false)
-                    {
-                        f.TopLevel = false;
-                        f.Size = p.Size;
-                        p.Controls.Add(f);
-                        f.Dock = DockStyle.Fill;
-                        f.Show();
-                    }
-                    else { f.Visible = true; }
-                }
-            }
-
-        }
+    
     }
 

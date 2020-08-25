@@ -118,7 +118,7 @@
             // 
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Location = new System.Drawing.Point(430, 0);
+            this.panel1.Location = new System.Drawing.Point(718, 341);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(352, 322);
             this.panel1.TabIndex = 7;
@@ -199,7 +199,7 @@
             this.dropDownButton1.BHeaderImage = null;
             this.dropDownButton1.BHeaderText = "Header Text";
             this.dropDownButton1.Location = new System.Drawing.Point(70, 328);
-            this.dropDownButton1.MaximumSize = new System.Drawing.Size(281, 60);
+            this.dropDownButton1.MaximumSize = new System.Drawing.Size(281, 94);
             this.dropDownButton1.MinimumSize = new System.Drawing.Size(281, 60);
             this.dropDownButton1.Name = "dropDownButton1";
             this.dropDownButton1.Size = new System.Drawing.Size(281, 60);

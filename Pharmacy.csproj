@@ -91,6 +91,12 @@
     <Compile Include="PL\Controls\HomeButtonMirror1.Designer.cs">
       <DependentUpon>HomeButtonMirror1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Controls\MyComboBox1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\MyComboBox1.Designer.cs">
+      <DependentUpon>MyComboBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Controls\NButton1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,17 +115,30 @@
     <Compile Include="PL\Controls\TryForm1.Designer.cs">
       <DependentUpon>TryForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\DesignFunctions.cs" />
     <Compile Include="PL\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\InvoiceDetails1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\InvoiceDetails1.Designer.cs">
+      <DependentUpon>InvoiceDetails1.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\InvoiceForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\InvoiceForm.Designer.cs">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\InvoiceReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\InvoiceReports.Designer.cs">
+      <DependentUpon>InvoiceReports.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\MainForm.cs">
       <SubType>Form</SubType>
@@ -150,6 +169,9 @@
     <EmbeddedResource Include="PL\Controls\HomeButtonMirror1.resx">
       <DependentUpon>HomeButtonMirror1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\MyComboBox1.resx">
+      <DependentUpon>MyComboBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Controls\NButton1.resx">
       <DependentUpon>NButton1.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,8 +184,14 @@
     <EmbeddedResource Include="PL\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\InvoiceDetails1.resx">
+      <DependentUpon>InvoiceDetails1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\InvoiceReports.resx">
+      <DependentUpon>InvoiceReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
