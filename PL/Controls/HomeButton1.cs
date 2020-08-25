@@ -17,8 +17,6 @@ namespace Pharmacy.PL.Controls
             InitializeComponent();
         }
 
-        public event EventHandler BClick;
-
 
         public string BText 
         {
@@ -40,7 +38,7 @@ namespace Pharmacy.PL.Controls
             get { return this.BtnHome.BackColor; }
             set { this.BtnHome.BackColor = value; }
         }
-     
+        public event EventHandler BClick;
         private void BtnHome_Click(object sender, EventArgs e)
         {
             if (this.BClick != null)

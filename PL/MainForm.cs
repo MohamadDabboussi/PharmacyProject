@@ -8,13 +8,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Pharmacy.PL;
 
-namespace Pharmacy
+namespace Pharmacy.PL
 {
     public partial class Main : Form
     {
-        private bool IsCollapsed;
         InvoiceForm invoiceF;
         HomeForm homeF;
 

@@ -1,4 +1,4 @@
-﻿namespace Pharmacy
+﻿namespace Pharmacy.PL
 {
     partial class Main
     {
@@ -38,21 +38,21 @@
             this.LblNameArabic = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.PanelReports = new System.Windows.Forms.Panel();
-            this.LblCopyrights = new System.Windows.Forms.Label();
-            this.PicPharmacyLogo = new System.Windows.Forms.PictureBox();
-            this.PanelForms = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnPaymentsReports = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnHome = new Pharmacy.PL.Controls.HomeButton1();
-            this.BtnSalesReports = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnSuppliers = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnStocks = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnInvoice = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnPayments = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnSales = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnCharts = new Pharmacy.PL.Controls.HomeButton1();
+            this.PanelReports = new System.Windows.Forms.Panel();
+            this.BtnPaymentsReports = new Pharmacy.PL.Controls.HomeButton1();
+            this.BtnSalesReports = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnReports = new Pharmacy.PL.Controls.HomeButton1();
             this.BtnSettings = new Pharmacy.PL.Controls.HomeButton1();
+            this.LblCopyrights = new System.Windows.Forms.Label();
+            this.PicPharmacyLogo = new System.Windows.Forms.PictureBox();
+            this.PanelForms = new System.Windows.Forms.TableLayoutPanel();
             this.TabHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRestore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -190,6 +190,85 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(283, 683);
             this.flowLayoutPanel1.TabIndex = 16;
             // 
+            // BtnHome
+            // 
+            this.BtnHome.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnHome.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHome.BImage = global::Pharmacy.Properties.Resources.home32;
+            this.BtnHome.BText = "Home";
+            this.BtnHome.Location = new System.Drawing.Point(3, 3);
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.Size = new System.Drawing.Size(281, 60);
+            this.BtnHome.TabIndex = 0;
+            this.BtnHome.BClick += new System.EventHandler(this.BtnHome_Click);
+            // 
+            // BtnSuppliers
+            // 
+            this.BtnSuppliers.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnSuppliers.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSuppliers.BImage = global::Pharmacy.Properties.Resources.supplier32;
+            this.BtnSuppliers.BText = "Suppliers";
+            this.BtnSuppliers.Location = new System.Drawing.Point(3, 69);
+            this.BtnSuppliers.Name = "BtnSuppliers";
+            this.BtnSuppliers.Size = new System.Drawing.Size(281, 60);
+            this.BtnSuppliers.TabIndex = 1;
+            // 
+            // BtnStocks
+            // 
+            this.BtnStocks.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnStocks.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStocks.BImage = global::Pharmacy.Properties.Resources.icons8_pill_bottle_32;
+            this.BtnStocks.BText = "Stocks";
+            this.BtnStocks.Location = new System.Drawing.Point(3, 135);
+            this.BtnStocks.Name = "BtnStocks";
+            this.BtnStocks.Size = new System.Drawing.Size(281, 60);
+            this.BtnStocks.TabIndex = 2;
+            // 
+            // BtnInvoice
+            // 
+            this.BtnInvoice.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnInvoice.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInvoice.BImage = global::Pharmacy.Properties.Resources.invoice3;
+            this.BtnInvoice.BText = "Invoice";
+            this.BtnInvoice.Location = new System.Drawing.Point(3, 201);
+            this.BtnInvoice.Name = "BtnInvoice";
+            this.BtnInvoice.Size = new System.Drawing.Size(281, 60);
+            this.BtnInvoice.TabIndex = 3;
+            this.BtnInvoice.BClick += new System.EventHandler(this.BtnInvoice_Click);
+            // 
+            // BtnPayments
+            // 
+            this.BtnPayments.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnPayments.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPayments.BImage = global::Pharmacy.Properties.Resources.icons8_online_payment_32;
+            this.BtnPayments.BText = "Payments";
+            this.BtnPayments.Location = new System.Drawing.Point(3, 267);
+            this.BtnPayments.Name = "BtnPayments";
+            this.BtnPayments.Size = new System.Drawing.Size(281, 60);
+            this.BtnPayments.TabIndex = 4;
+            // 
+            // BtnSales
+            // 
+            this.BtnSales.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnSales.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSales.BImage = global::Pharmacy.Properties.Resources.sales32;
+            this.BtnSales.BText = "Sales";
+            this.BtnSales.Location = new System.Drawing.Point(3, 333);
+            this.BtnSales.Name = "BtnSales";
+            this.BtnSales.Size = new System.Drawing.Size(281, 60);
+            this.BtnSales.TabIndex = 5;
+            // 
+            // BtnCharts
+            // 
+            this.BtnCharts.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnCharts.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCharts.BImage = global::Pharmacy.Properties.Resources.charts32;
+            this.BtnCharts.BText = "Charts";
+            this.BtnCharts.Location = new System.Drawing.Point(3, 399);
+            this.BtnCharts.Name = "BtnCharts";
+            this.BtnCharts.Size = new System.Drawing.Size(281, 60);
+            this.BtnCharts.TabIndex = 6;
+            // 
             // PanelReports
             // 
             this.PanelReports.Controls.Add(this.BtnPaymentsReports);
@@ -201,6 +280,54 @@
             this.PanelReports.Name = "PanelReports";
             this.PanelReports.Size = new System.Drawing.Size(281, 60);
             this.PanelReports.TabIndex = 0;
+            // 
+            // BtnPaymentsReports
+            // 
+            this.BtnPaymentsReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnPaymentsReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.BtnPaymentsReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 10F);
+            this.BtnPaymentsReports.BImage = null;
+            this.BtnPaymentsReports.BText = "Payments Reports";
+            this.BtnPaymentsReports.Location = new System.Drawing.Point(0, 94);
+            this.BtnPaymentsReports.Name = "BtnPaymentsReports";
+            this.BtnPaymentsReports.Size = new System.Drawing.Size(281, 34);
+            this.BtnPaymentsReports.TabIndex = 2;
+            // 
+            // BtnSalesReports
+            // 
+            this.BtnSalesReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnSalesReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.BtnSalesReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalesReports.BImage = null;
+            this.BtnSalesReports.BText = "Sales Reports";
+            this.BtnSalesReports.Location = new System.Drawing.Point(0, 60);
+            this.BtnSalesReports.Name = "BtnSalesReports";
+            this.BtnSalesReports.Size = new System.Drawing.Size(281, 34);
+            this.BtnSalesReports.TabIndex = 1;
+            // 
+            // BtnReports
+            // 
+            this.BtnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReports.BImage = global::Pharmacy.Properties.Resources.reports32;
+            this.BtnReports.BText = "Reports";
+            this.BtnReports.Location = new System.Drawing.Point(0, 0);
+            this.BtnReports.Name = "BtnReports";
+            this.BtnReports.Size = new System.Drawing.Size(281, 60);
+            this.BtnReports.TabIndex = 0;
+            this.BtnReports.BClick += new System.EventHandler(this.BtnReports_BClick);
+            // 
+            // BtnSettings
+            // 
+            this.BtnSettings.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.BtnSettings.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSettings.BImage = global::Pharmacy.Properties.Resources.settings32;
+            this.BtnSettings.BText = "Settings";
+            this.BtnSettings.Location = new System.Drawing.Point(3, 531);
+            this.BtnSettings.Name = "BtnSettings";
+            this.BtnSettings.Size = new System.Drawing.Size(281, 60);
+            this.BtnSettings.TabIndex = 7;
             // 
             // LblCopyrights
             // 
@@ -248,131 +375,6 @@
             this.PanelForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 965F));
             this.PanelForms.Size = new System.Drawing.Size(1217, 965);
             this.PanelForms.TabIndex = 2;
-            // 
-            // BtnPaymentsReports
-            // 
-            this.BtnPaymentsReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnPaymentsReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.BtnPaymentsReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 10F);
-            this.BtnPaymentsReports.BImage = null;
-            this.BtnPaymentsReports.BText = "Payments Reports";
-            this.BtnPaymentsReports.Location = new System.Drawing.Point(0, 94);
-            this.BtnPaymentsReports.Name = "BtnPaymentsReports";
-            this.BtnPaymentsReports.Size = new System.Drawing.Size(281, 34);
-            this.BtnPaymentsReports.TabIndex = 2;
-            // 
-            // BtnHome
-            // 
-            this.BtnHome.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnHome.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHome.BImage = global::Pharmacy.Properties.Resources.home32;
-            this.BtnHome.BText = "Home";
-            this.BtnHome.Location = new System.Drawing.Point(3, 3);
-            this.BtnHome.Name = "BtnHome";
-            this.BtnHome.Size = new System.Drawing.Size(281, 60);
-            this.BtnHome.TabIndex = 0;
-            // 
-            // BtnSalesReports
-            // 
-            this.BtnSalesReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnSalesReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.BtnSalesReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalesReports.BImage = null;
-            this.BtnSalesReports.BText = "Sales Reports";
-            this.BtnSalesReports.Location = new System.Drawing.Point(0, 60);
-            this.BtnSalesReports.Name = "BtnSalesReports";
-            this.BtnSalesReports.Size = new System.Drawing.Size(281, 34);
-            this.BtnSalesReports.TabIndex = 1;
-            // 
-            // BtnSuppliers
-            // 
-            this.BtnSuppliers.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnSuppliers.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSuppliers.BImage = global::Pharmacy.Properties.Resources.supplier32;
-            this.BtnSuppliers.BText = "Suppliers";
-            this.BtnSuppliers.Location = new System.Drawing.Point(3, 69);
-            this.BtnSuppliers.Name = "BtnSuppliers";
-            this.BtnSuppliers.Size = new System.Drawing.Size(281, 60);
-            this.BtnSuppliers.TabIndex = 1;
-            // 
-            // BtnStocks
-            // 
-            this.BtnStocks.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnStocks.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStocks.BImage = global::Pharmacy.Properties.Resources.icons8_pill_bottle_32;
-            this.BtnStocks.BText = "Stocks";
-            this.BtnStocks.Location = new System.Drawing.Point(3, 135);
-            this.BtnStocks.Name = "BtnStocks";
-            this.BtnStocks.Size = new System.Drawing.Size(281, 60);
-            this.BtnStocks.TabIndex = 2;
-            // 
-            // BtnInvoice
-            // 
-            this.BtnInvoice.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnInvoice.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnInvoice.BImage = global::Pharmacy.Properties.Resources.invoice3;
-            this.BtnInvoice.BText = "Invoice";
-            this.BtnInvoice.Location = new System.Drawing.Point(3, 201);
-            this.BtnInvoice.Name = "BtnInvoice";
-            this.BtnInvoice.Size = new System.Drawing.Size(281, 60);
-            this.BtnInvoice.TabIndex = 3;
-            // 
-            // BtnPayments
-            // 
-            this.BtnPayments.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnPayments.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPayments.BImage = global::Pharmacy.Properties.Resources.icons8_online_payment_32;
-            this.BtnPayments.BText = "Payments";
-            this.BtnPayments.Location = new System.Drawing.Point(3, 267);
-            this.BtnPayments.Name = "BtnPayments";
-            this.BtnPayments.Size = new System.Drawing.Size(281, 60);
-            this.BtnPayments.TabIndex = 4;
-            // 
-            // BtnSales
-            // 
-            this.BtnSales.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnSales.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSales.BImage = global::Pharmacy.Properties.Resources.sales32;
-            this.BtnSales.BText = "Sales";
-            this.BtnSales.Location = new System.Drawing.Point(3, 333);
-            this.BtnSales.Name = "BtnSales";
-            this.BtnSales.Size = new System.Drawing.Size(281, 60);
-            this.BtnSales.TabIndex = 5;
-            // 
-            // BtnCharts
-            // 
-            this.BtnCharts.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnCharts.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCharts.BImage = global::Pharmacy.Properties.Resources.charts32;
-            this.BtnCharts.BText = "Charts";
-            this.BtnCharts.Location = new System.Drawing.Point(3, 399);
-            this.BtnCharts.Name = "BtnCharts";
-            this.BtnCharts.Size = new System.Drawing.Size(281, 60);
-            this.BtnCharts.TabIndex = 6;
-            // 
-            // BtnReports
-            // 
-            this.BtnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnReports.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnReports.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnReports.BImage = global::Pharmacy.Properties.Resources.reports32;
-            this.BtnReports.BText = "Reports";
-            this.BtnReports.Location = new System.Drawing.Point(0, 0);
-            this.BtnReports.Name = "BtnReports";
-            this.BtnReports.Size = new System.Drawing.Size(281, 60);
-            this.BtnReports.TabIndex = 0;
-            this.BtnReports.BClick += new System.EventHandler(this.BtnReports_BClick);
-            // 
-            // BtnSettings
-            // 
-            this.BtnSettings.BBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.BtnSettings.BfonyStyle = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSettings.BImage = global::Pharmacy.Properties.Resources.settings32;
-            this.BtnSettings.BText = "Settings";
-            this.BtnSettings.Location = new System.Drawing.Point(3, 531);
-            this.BtnSettings.Name = "BtnSettings";
-            this.BtnSettings.Size = new System.Drawing.Size(281, 60);
-            this.BtnSettings.TabIndex = 7;
             // 
             // Main
             // 

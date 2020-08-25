@@ -1,6 +1,6 @@
 ﻿namespace Pharmacy.PL.Controls
 {
-    partial class DataGridViewDesignsForm
+    partial class TryForm1
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.dropDownButton2 = new Pharmacy.PL.Controls.DropDownButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.dropDownButton1 = new Pharmacy.PL.Controls.DropDownButton();
             this.dataGridView11 = new Pharmacy.PL.Controls.DataGridView1();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -176,38 +177,37 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // dropDownButton2
+            // textBox1
             // 
-            this.dropDownButton2.BHeaderImage = null;
-            this.dropDownButton2.BHeaderText = "Reports";
-            this.dropDownButton2.Location = new System.Drawing.Point(80, 321);
-            this.dropDownButton2.MaximumSize = new System.Drawing.Size(281, 298);
-            this.dropDownButton2.MinimumSize = new System.Drawing.Size(281, 60);
-            this.dropDownButton2.Name = "dropDownButton2";
-            this.dropDownButton2.Size = new System.Drawing.Size(281, 298);
-            this.dropDownButton2.SubButtonsNames = new string[] {
-        null,
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""};
-            this.dropDownButton2.SubButtonsNumber = 7;
-            this.dropDownButton2.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(133, 545);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(188, 22);
+            this.textBox1.TabIndex = 11;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(133, 585);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dropDownButton1
             // 
             this.dropDownButton1.BHeaderImage = null;
             this.dropDownButton1.BHeaderText = "Header Text";
-            this.dropDownButton1.Location = new System.Drawing.Point(-28, -57);
+            this.dropDownButton1.Location = new System.Drawing.Point(70, 328);
             this.dropDownButton1.MaximumSize = new System.Drawing.Size(281, 60);
             this.dropDownButton1.MinimumSize = new System.Drawing.Size(281, 60);
             this.dropDownButton1.Name = "dropDownButton1";
             this.dropDownButton1.Size = new System.Drawing.Size(281, 60);
-            this.dropDownButton1.SubButtonsNames = new string[0];
-            this.dropDownButton1.SubButtonsNumber = 0;
-            this.dropDownButton1.TabIndex = 10;
+            this.dropDownButton1.SubButtonsNames = new string[] {
+        ""};
+            this.dropDownButton1.SubButtonsNumber = 1;
+            this.dropDownButton1.TabIndex = 13;
+            this.dropDownButton1.BClick += new System.EventHandler(this.dropDownButton1_Click);
             // 
             // dataGridView11
             // 
@@ -281,25 +281,27 @@
             this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             // 
-            // DataGridViewDesignsForm
+            // TryForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 1055);
-            this.Controls.Add(this.dropDownButton2);
             this.Controls.Add(this.dropDownButton1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView11);
             this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Name = "DataGridViewDesignsForm";
-            this.Text = "DataGridViewDesignsForm";
+            this.Name = "TryForm1";
+            this.Text = "TryForm1";
             this.Load += new System.EventHandler(this.DataGridViewDesignsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -315,7 +317,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn _Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
         private DropDownButton dropDownButton1;
-        private DropDownButton dropDownButton2;
     }
 }

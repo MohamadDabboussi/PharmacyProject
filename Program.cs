@@ -20,7 +20,7 @@ namespace Pharmacy
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.Controls.DataGridViewDesignsForm());
+            Application.Run(new PL.Main());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

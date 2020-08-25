@@ -37,7 +37,7 @@
             // 
             this.Panel.Controls.Add(this.BtnHeader);
             this.Panel.Location = new System.Drawing.Point(0, 0);
-            this.Panel.MaximumSize = new System.Drawing.Size(281, 130);
+            this.Panel.MaximumSize = new System.Drawing.Size(281, 60);
             this.Panel.MinimumSize = new System.Drawing.Size(281, 60);
             this.Panel.Name = "Panel";
             this.Panel.Size = new System.Drawing.Size(281, 60);
@@ -54,12 +54,15 @@
             this.BtnHeader.Name = "BtnHeader";
             this.BtnHeader.Size = new System.Drawing.Size(281, 60);
             this.BtnHeader.TabIndex = 0;
+            this.BtnHeader.BClick += new System.EventHandler(this.Btn_Click);
             // 
             // DropDownButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Panel);
+            this.MaximumSize = new System.Drawing.Size(281, 60);
+            this.MinimumSize = new System.Drawing.Size(281, 60);
             this.Name = "DropDownButton";
             this.Size = new System.Drawing.Size(281, 60);
             this.Panel.ResumeLayout(false);
