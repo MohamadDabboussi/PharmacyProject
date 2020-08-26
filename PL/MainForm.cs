@@ -15,6 +15,7 @@ namespace Pharmacy.PL
     {
         InvoiceForm invoiceF;
         HomeForm homeF;
+        StocksForm stockF;
 
 
 
@@ -91,6 +92,12 @@ namespace Pharmacy.PL
             else PanelReports.Size = PanelReports.MinimumSize;
 
 
+        }
+
+        private void BtnStocks_BClick(object sender, EventArgs e)
+        {
+            if (stockF == null) stockF = new PL.StocksForm();//add refresh form
+            DesignFunctions.ShowFormsInPanelForms(stockF, PanelForms);
         }
     }
 

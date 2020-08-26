@@ -35,14 +35,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoiceForm));
             this.panelDataGridView = new System.Windows.Forms.Panel();
             this.dataGridView11 = new Pharmacy.PL.Controls.DataGridView1();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.LblDateTime = new System.Windows.Forms.Label();
-            this.LblInvoice = new System.Windows.Forms.Label();
-            this.LblSupplier = new System.Windows.Forms.Label();
-            this.Textbox1ID = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.myComboBox11 = new Pharmacy.PL.Controls.MyComboBox1();
-            this.button2 = new System.Windows.Forms.Button();
-            this.BtnAddNew = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Medecine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +43,14 @@
             this.Margin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.LblDateTime = new System.Windows.Forms.Label();
+            this.LblInvoice = new System.Windows.Forms.Label();
+            this.LblSupplier = new System.Windows.Forms.Label();
+            this.Textbox1ID = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.myComboBox11 = new Pharmacy.PL.Controls.MyComboBox1();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BtnAddNew = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panelDataGridView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
             this.SuspendLayout();
@@ -131,127 +131,6 @@
             this.dataGridView11.Size = new System.Drawing.Size(1210, 500);
             this.dataGridView11.TabIndex = 6;
             // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(763, 270);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(362, 34);
-            this.bunifuDatepicker1.TabIndex = 10;
-            this.bunifuDatepicker1.Value = new System.DateTime(2020, 8, 25, 12, 43, 37, 60);
-            // 
-            // LblDateTime
-            // 
-            this.LblDateTime.AutoSize = true;
-            this.LblDateTime.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.LblDateTime.Location = new System.Drawing.Point(653, 276);
-            this.LblDateTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDateTime.Name = "LblDateTime";
-            this.LblDateTime.Size = new System.Drawing.Size(81, 28);
-            this.LblDateTime.TabIndex = 11;
-            this.LblDateTime.Text = "Date :";
-            // 
-            // LblInvoice
-            // 
-            this.LblInvoice.AutoSize = true;
-            this.LblInvoice.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.LblInvoice.Location = new System.Drawing.Point(76, 276);
-            this.LblInvoice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblInvoice.Name = "LblInvoice";
-            this.LblInvoice.Size = new System.Drawing.Size(142, 28);
-            this.LblInvoice.TabIndex = 12;
-            this.LblInvoice.Text = "Invoice ID :";
-            // 
-            // LblSupplier
-            // 
-            this.LblSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblSupplier.AutoSize = true;
-            this.LblSupplier.Font = new System.Drawing.Font("Century Gothic", 31.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.LblSupplier.Location = new System.Drawing.Point(489, 52);
-            this.LblSupplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblSupplier.Name = "LblSupplier";
-            this.LblSupplier.Size = new System.Drawing.Size(356, 64);
-            this.LblSupplier.TabIndex = 13;
-            this.LblSupplier.Text = "New Invoice";
-            // 
-            // Textbox1ID
-            // 
-            this.Textbox1ID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.Textbox1ID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Textbox1ID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.Textbox1ID.BorderThickness = 3;
-            this.Textbox1ID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Textbox1ID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox1ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.Textbox1ID.isPassword = false;
-            this.Textbox1ID.Location = new System.Drawing.Point(237, 268);
-            this.Textbox1ID.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Textbox1ID.Name = "Textbox1ID";
-            this.Textbox1ID.Size = new System.Drawing.Size(356, 36);
-            this.Textbox1ID.TabIndex = 15;
-            this.Textbox1ID.Text = "ID";
-            this.Textbox1ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // myComboBox11
-            // 
-            this.myComboBox11.ComboBoxDisplayMember = "";
-            this.myComboBox11.ComboBoxSelectedValue = null;
-            this.myComboBox11.ComboBoxValueMember = "";
-            this.myComboBox11.Location = new System.Drawing.Point(447, 190);
-            this.myComboBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.myComboBox11.Name = "myComboBox11";
-            this.myComboBox11.Size = new System.Drawing.Size(384, 430);
-            this.myComboBox11.TabIndex = 17;
-            this.myComboBox11.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(582, 876);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 59);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Add new medecine";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // BtnAddNew
-            // 
-            this.BtnAddNew.ActiveBorderThickness = 1;
-            this.BtnAddNew.ActiveCornerRadius = 20;
-            this.BtnAddNew.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.BtnAddNew.ActiveForecolor = System.Drawing.Color.White;
-            this.BtnAddNew.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.BtnAddNew.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.BtnAddNew.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddNew.BackgroundImage")));
-            this.BtnAddNew.ButtonText = "add new medecine";
-            this.BtnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAddNew.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddNew.ForeColor = System.Drawing.Color.White;
-            this.BtnAddNew.IdleBorderThickness = 1;
-            this.BtnAddNew.IdleCornerRadius = 20;
-            this.BtnAddNew.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.BtnAddNew.IdleForecolor = System.Drawing.Color.White;
-            this.BtnAddNew.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.BtnAddNew.Location = new System.Drawing.Point(531, 878);
-            this.BtnAddNew.Margin = new System.Windows.Forms.Padding(5);
-            this.BtnAddNew.Name = "BtnAddNew";
-            this.BtnAddNew.Size = new System.Drawing.Size(252, 59);
-            this.BtnAddNew.TabIndex = 18;
-            this.BtnAddNew.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BtnAddNew.Click += new System.EventHandler(this.BtnAddNew_Click);
-            // 
             // Medecine
             // 
             this.Medecine.FillWeight = 250F;
@@ -307,11 +186,132 @@
             this.TotalPrice.MinimumWidth = 6;
             this.TotalPrice.Name = "TotalPrice";
             // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.bunifuDatepicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = null;
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(763, 270);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(8);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(362, 34);
+            this.bunifuDatepicker1.TabIndex = 10;
+            this.bunifuDatepicker1.Value = new System.DateTime(2020, 8, 25, 12, 43, 37, 60);
+            // 
+            // LblDateTime
+            // 
+            this.LblDateTime.AutoSize = true;
+            this.LblDateTime.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.LblDateTime.Location = new System.Drawing.Point(653, 276);
+            this.LblDateTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDateTime.Name = "LblDateTime";
+            this.LblDateTime.Size = new System.Drawing.Size(81, 28);
+            this.LblDateTime.TabIndex = 11;
+            this.LblDateTime.Text = "Date :";
+            // 
+            // LblInvoice
+            // 
+            this.LblInvoice.AutoSize = true;
+            this.LblInvoice.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.LblInvoice.Location = new System.Drawing.Point(76, 276);
+            this.LblInvoice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblInvoice.Name = "LblInvoice";
+            this.LblInvoice.Size = new System.Drawing.Size(142, 28);
+            this.LblInvoice.TabIndex = 12;
+            this.LblInvoice.Text = "Invoice ID :";
+            // 
+            // LblSupplier
+            // 
+            this.LblSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblSupplier.AutoSize = true;
+            this.LblSupplier.Font = new System.Drawing.Font("Century Gothic", 31.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.LblSupplier.Location = new System.Drawing.Point(489, 52);
+            this.LblSupplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSupplier.Name = "LblSupplier";
+            this.LblSupplier.Size = new System.Drawing.Size(349, 63);
+            this.LblSupplier.TabIndex = 13;
+            this.LblSupplier.Text = "New Invoice";
+            // 
+            // Textbox1ID
+            // 
+            this.Textbox1ID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.Textbox1ID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Textbox1ID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.Textbox1ID.BorderThickness = 3;
+            this.Textbox1ID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Textbox1ID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox1ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
+            this.Textbox1ID.isPassword = false;
+            this.Textbox1ID.Location = new System.Drawing.Point(237, 268);
+            this.Textbox1ID.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Textbox1ID.Name = "Textbox1ID";
+            this.Textbox1ID.Size = new System.Drawing.Size(356, 36);
+            this.Textbox1ID.TabIndex = 15;
+            this.Textbox1ID.Text = "ID";
+            this.Textbox1ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // myComboBox11
+            // 
+            this.myComboBox11.ComboBoxDisplayMember = "";
+            this.myComboBox11.ComboBoxSelectedValue = null;
+            this.myComboBox11.ComboBoxValueMember = "";
+            this.myComboBox11.Location = new System.Drawing.Point(447, 190);
+            this.myComboBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.myComboBox11.Name = "myComboBox11";
+            this.myComboBox11.Size = new System.Drawing.Size(384, 430);
+            this.myComboBox11.TabIndex = 17;
+            this.myComboBox11.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.button2.Location = new System.Drawing.Point(582, 876);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(227, 59);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Add new medecine";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // BtnAddNew
+            // 
+            this.BtnAddNew.ActiveBorderThickness = 1;
+            this.BtnAddNew.ActiveCornerRadius = 20;
+            this.BtnAddNew.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.BtnAddNew.ActiveForecolor = System.Drawing.Color.White;
+            this.BtnAddNew.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
+            this.BtnAddNew.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnAddNew.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddNew.BackgroundImage")));
+            this.BtnAddNew.ButtonText = "add new medecine";
+            this.BtnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddNew.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddNew.ForeColor = System.Drawing.Color.White;
+            this.BtnAddNew.IdleBorderThickness = 1;
+            this.BtnAddNew.IdleCornerRadius = 20;
+            this.BtnAddNew.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.BtnAddNew.IdleForecolor = System.Drawing.Color.White;
+            this.BtnAddNew.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.BtnAddNew.Location = new System.Drawing.Point(531, 878);
+            this.BtnAddNew.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnAddNew.Name = "BtnAddNew";
+            this.BtnAddNew.Size = new System.Drawing.Size(248, 59);
+            this.BtnAddNew.TabIndex = 18;
+            this.BtnAddNew.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnAddNew.Click += new System.EventHandler(this.BtnAddNew_Click);
+            // 
             // InvoiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1210, 960);
             this.Controls.Add(this.BtnAddNew);
             this.Controls.Add(this.myComboBox11);

@@ -64,5 +64,16 @@ namespace Pharmacy.PL
             PictureBox b = (PictureBox)sender;
             b.BackColor = Color.FromArgb(44, 49, 53); ;
         }
+        public static void ControlSize_MouseEnter(object sender, EventArgs e)
+        {
+            Control c = (Control)sender;
+            c.Size += new Size(5, 5);
+        }
+        public static void ControlSize_MouseLeave(object sender, EventArgs e)
+        {
+            Control c = (Control)sender;
+            c.Size -= new Size(5, 5);
+        }
+
     }
 }

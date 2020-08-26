@@ -223,6 +223,7 @@
             this.BtnStocks.Name = "BtnStocks";
             this.BtnStocks.Size = new System.Drawing.Size(281, 60);
             this.BtnStocks.TabIndex = 2;
+            this.BtnStocks.BClick += new System.EventHandler(this.BtnStocks_BClick);
             // 
             // BtnInvoice
             // 

@@ -17,10 +17,9 @@ namespace Pharmacy
 
             if (Environment.OSVersion.Version.Major >= 6)
                 SetProcessDPIAware();
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.InvoiceReports());
+            Application.Run(new PL.Main());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

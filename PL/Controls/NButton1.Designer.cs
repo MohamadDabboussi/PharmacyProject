@@ -51,7 +51,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(505, 48);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 64);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -61,7 +61,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(25, 48);
+            this.panel1.Size = new System.Drawing.Size(25, 64);
             this.panel1.TabIndex = 0;
             // 
             // BtnText
@@ -72,10 +72,10 @@
             this.BtnText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnText.Location = new System.Drawing.Point(126, 0);
+            this.BtnText.Location = new System.Drawing.Point(125, 0);
             this.BtnText.Margin = new System.Windows.Forms.Padding(0);
             this.BtnText.Name = "BtnText";
-            this.BtnText.Size = new System.Drawing.Size(379, 48);
+            this.BtnText.Size = new System.Drawing.Size(375, 64);
             this.BtnText.TabIndex = 2;
             this.BtnText.Text = "Supplier";
             this.BtnText.UseVisualStyleBackColor = false;
@@ -90,10 +90,12 @@
             this.BtnID.Location = new System.Drawing.Point(25, 0);
             this.BtnID.Margin = new System.Windows.Forms.Padding(0);
             this.BtnID.Name = "BtnID";
-            this.BtnID.Size = new System.Drawing.Size(101, 48);
+            this.BtnID.Size = new System.Drawing.Size(100, 64);
             this.BtnID.TabIndex = 3;
             this.BtnID.Text = "ID";
             this.BtnID.UseVisualStyleBackColor = false;
+            this.BtnID.MouseEnter += new System.EventHandler(this.BtnID_MouseEnter);
+            this.BtnID.MouseLeave += new System.EventHandler(this.BtnID_MouseLeave);
             // 
             // NButton1
             // 
@@ -102,7 +104,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "NButton1";
-            this.Size = new System.Drawing.Size(505, 48);
+            this.Size = new System.Drawing.Size(500, 64);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

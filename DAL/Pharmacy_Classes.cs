@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Pharmacy.DAL
 {
 
-    class Medecines
+    public class Medecines
     {
         public Medecines()
         {
@@ -29,7 +29,7 @@ namespace Pharmacy.DAL
         public Nullable<int> Supplier { get; set; }
         public string Laboratory { get; set; }
         public string Manufacturing_country { get; set; }
-        public string Price { get; set; }
+        public float Price { get; set; }
         public Nullable<double> Percentage_of_gain { get; set; }
         public Nullable<double> Plus_margin_gain { get; set; }
         public string Stratum { get; set; }
@@ -56,7 +56,7 @@ namespace Pharmacy.DAL
 
 
     }
-    class M_form
+    public class M_form
     {
         public M_form()
         {
@@ -66,7 +66,7 @@ namespace Pharmacy.DAL
         public string Form1 { get; set; }
         public virtual DataTable Medecines { get; set; }
     }
-    class Invoice 
+    public class Invoice 
     {
         public Invoice()
         {
@@ -78,18 +78,18 @@ namespace Pharmacy.DAL
         public virtual DataTable Payments { get; set; }
     }
 
-    class InvoiceDetails
+    public class InvoiceDetails
     {
         public int InvoiceID { get; set; }
         public int MedecineID { get; set; }
         public int Quantity { get; set; }
-        public string UnitPrice { get; set; }
+        public float UnitPrice { get; set; }
         public Nullable<double> Discount { get; set; }
 
         public virtual Invoice Invoice { get; set; }
         public virtual Medecines Medecine { get; set; }
     }
-    class Payment
+    public class Payment
     {
         public int ID { get; set; }
         public int InvoiceID { get; set; }
@@ -98,7 +98,7 @@ namespace Pharmacy.DAL
 
         public virtual Invoice Invoice { get; set; }
     }
-    class Sales
+    public class Sales
     {
         public Sales()
         {
@@ -107,7 +107,7 @@ namespace Pharmacy.DAL
         public Nullable<System.DateTime> SaleDate { get; set; }
         public virtual DataTable SalesDetails { get; set; }
     }
-    class SalesDetails
+    public class SalesDetails
     {
         public int SaleID { get; set; }
         public int MedecineID { get; set; }
@@ -118,7 +118,7 @@ namespace Pharmacy.DAL
         public virtual Medecines Medecine { get; set; }
         public virtual Sales Sale { get; set; }
     }
-    class Supplier
+    public class Supplier
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Supplier()

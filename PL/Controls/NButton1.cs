@@ -36,6 +36,18 @@ namespace Pharmacy.PL.Controls
             if (this.BClick != null)
             { this.BClick(this, e); }
         }
+        public event EventHandler BIDMouseEnter,BIDMouseLeave;
 
+        private void BtnID_MouseLeave(object sender, EventArgs e)
+        {
+            if (this.BIDMouseLeave != null)
+            { this.BIDMouseLeave(this, e); }
+        }
+
+        private void BtnID_MouseEnter(object sender, EventArgs e)
+        {
+            if (this.BIDMouseEnter != null)
+            { this.BIDMouseEnter(this, e); }
+        }
     }
 }

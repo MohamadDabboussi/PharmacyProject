@@ -67,12 +67,6 @@
     <Compile Include="PL\Controls\DataGridView2.Designer.cs">
       <DependentUpon>DataGridView2.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\Controls\DateTimePicker1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\Controls\DateTimePicker1.Designer.cs">
-      <DependentUpon>DateTimePicker1.cs</DependentUpon>
-    </Compile>
     <Compile Include="PL\Controls\DropDownButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +96,12 @@
     </Compile>
     <Compile Include="PL\Controls\NButton1.Designer.cs">
       <DependentUpon>NButton1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Controls\ProductStockInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Controls\ProductStockInfo.Designer.cs">
+      <DependentUpon>ProductStockInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Controls\SubHomeButton.cs">
       <SubType>UserControl</SubType>
@@ -146,6 +146,12 @@
     <Compile Include="PL\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\StocksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\StocksForm.Designer.cs">
+      <DependentUpon>StocksForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\SupplierForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="PL\Controls\NButton1.resx">
       <DependentUpon>NButton1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Controls\ProductStockInfo.resx">
+      <DependentUpon>ProductStockInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Controls\SubHomeButton.resx">
       <DependentUpon>SubHomeButton.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\StocksForm.resx">
+      <DependentUpon>StocksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\SupplierForm.resx">
       <DependentUpon>SupplierForm.cs</DependentUpon>
@@ -296,6 +308,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="_Pictures\icons8-double-left-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Pictures\trash32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
