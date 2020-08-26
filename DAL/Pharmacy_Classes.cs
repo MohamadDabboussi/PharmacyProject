@@ -71,23 +71,44 @@ namespace Pharmacy.DAL
         public Invoice()
         {
         }
+        public Invoice(int ID,DateTime InvoiceDate,int? supplier)
+        {
+            this.ID = ID;
+            this.InvoiceDate = InvoiceDate;
+            this.Supplier = supplier;
+        }
 
         public int ID { get; set; }
         public Nullable<System.DateTime> InvoiceDate { get; set; }
+        public bool IsPayed { get; set; }
+        public int? Supplier { get; set; }
         public virtual DataTable InvoiceDetails { get; set; }
         public virtual DataTable Payments { get; set; }
     }
 
     public class InvoiceDetails
     {
+        public InvoiceDetails() { }
+        public InvoiceDetails(int MedecineID, int InvoiceID, int Quantity, float UnitPrice, float VAT, DateTime ExpiryDate,float discount)
+        {
+            this.MedecineID = MedecineID;
+            this.InvoiceID = InvoiceID;
+            this.Quantity = Quantity;
+            this.UnitPrice = UnitPrice;
+            this.VAT = VAT;
+            this.ExpiryDate = ExpiryDate;
+            this.Discount = discount;
+        }
         public int InvoiceID { get; set; }
         public int MedecineID { get; set; }
         public int Quantity { get; set; }
         public float UnitPrice { get; set; }
-        public Nullable<double> Discount { get; set; }
+        public float? VAT { get; set; }
+        public DateTime? ExpiryDate { get; set; }
+        public Nullable<float> Discount { get; set; }
 
         public virtual Invoice Invoice { get; set; }
-        public virtual Medecines Medecine { get; set; }
+        public virtual Medecines Medecine { get; set; }//function
     }
     public class Payment
     {

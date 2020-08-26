@@ -75,5 +75,22 @@ namespace Pharmacy.PL
             c.Size -= new Size(5, 5);
         }
 
+
+        public static void RemoveText(object sender, EventArgs e)
+        {
+            TextBox myTxtbx = (TextBox)sender;
+            if (myTxtbx.Text == myTxtbx.Tag.ToString())
+            {
+                myTxtbx.Text = "";
+            }
+        }
+
+        public static void AddText(object sender, EventArgs e)
+        {
+            TextBox myTxtbx = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(myTxtbx.Text))
+                myTxtbx.Text = myTxtbx.Tag.ToString();
+        }
+
     }
 }

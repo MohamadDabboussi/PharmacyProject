@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\HelpingFunctions.cs" />
+    <Compile Include="BL\LinkDtataToPL.cs" />
+    <Compile Include="DAL\Data_Functions.cs" />
     <Compile Include="DAL\Pharmacy_Classes.cs" />
     <Compile Include="DAL\DataLayer.cs" />
     <Compile Include="PL\Controls\DataGridView1.cs">
@@ -279,9 +282,7 @@
   <ItemGroup>
     <None Include="_Pictures\settings32.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Properties\close icon1.png" />
   </ItemGroup>

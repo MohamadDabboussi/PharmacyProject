@@ -147,8 +147,9 @@ namespace Pharmacy.DAL
             else return null;
         }
 
-        public void ExecuteActionCommand_StoredProcedure(string CommandText, object[,] Parameters)
+        public int ExecuteActionCommand_StoredProcedure(string CommandText, object[,] Parameters)
         {
+            int rep = 0;
             if (IsValid)
             {
                 SqlCommand com = new SqlCommand(CommandText, con);
@@ -161,7 +162,7 @@ namespace Pharmacy.DAL
                 con.Open();
                 try
                 {
-                    com.ExecuteNonQuery();
+                   rep= com.ExecuteNonQuery();
                 }
                 catch 
                 {
@@ -169,6 +170,7 @@ namespace Pharmacy.DAL
                 }
                 con.Close();
             }
+            return rep;
         }
 
         public object GetValue_Query(string SqlText, object[,] Parameters) 

@@ -18,9 +18,16 @@ namespace Pharmacy.PL.Controls
         }
 
 
-        public string ComboBoxDataSource
+        public object ComboBoxDataSource
         {
-            set { this.comboBox1.DataSource = value; }
+            get { return this.comboBox1.DataSource; }
+            set { this.comboBox1.DataSource = value;
+            }
+        }
+        public string LookupMember
+        {
+            get => this.comboBox1.SelectedValue?.ToString();
+            set => this.comboBox1.SelectedValue = value;
         }
         public string ComboBoxDisplayMember
         {
@@ -62,6 +69,11 @@ namespace Pharmacy.PL.Controls
         private void Tab_MouseDown(object sender, MouseEventArgs e)
         {
             DesignFunctions.MoveControl(this);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
