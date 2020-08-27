@@ -61,13 +61,19 @@ namespace Pharmacy.BL
             string sqlFormattedDate = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
             return sqlFormattedDate;
         }
+        public static string DateToString(DateTime myDateTime)
+        {
+            string sqlFormattedDate = myDateTime.ToString("yyyy-MM-dd");
+            return sqlFormattedDate;
+        }
         public static DateTime StringToDate(string s)
         {
-            return DateTime.ParseExact(s, "yyyyMMdd", CultureInfo.InvariantCulture);
+            DateTime dt = DateTime.ParseExact(s, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+            return dt;
         }
         public static DateTime StringToDateTime(string s)
         {
-            return DateTime.ParseExact(s, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
+            return DateTime.ParseExact(s, "yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
         }
     }
 }

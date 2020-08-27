@@ -11,17 +11,7 @@ namespace Pharmacy.DAL
     }
     class Invoice_Functions
     {
-        public static bool AddInvoice(DataLayer dt, object[,] Params)
-        {
-            int rep=0;
-            try
-            {
-                rep = dt.ExecuteActionCommand_StoredProcedure("AddInvoice", Params);
-                if (rep > 0) return true;
-                else return false;
-            }
-            catch { return false; }
-        }
+       
     }
     class InvoiceDetails_functions
     {

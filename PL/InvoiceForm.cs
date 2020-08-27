@@ -17,9 +17,11 @@ namespace Pharmacy.PL
         public InvoiceForm()
         {
             InitializeComponent();
-            Textbox1ID.GotFocus += DesignFunctions.RemoveText;
-            Textbox1ID.LostFocus += DesignFunctions.AddText;
-            LinkDtataToPL.FillProductsComboBox(this);
+            Textbox1ID.MouseEnter += DesignFunctions.RemoveTextBunifu;
+            Textbox1ID.MouseLeave += DesignFunctions.AddTextBunifu;
+            LinkDtataToPL.FillSupplierComboBox(this);
+            DateTime dtt= bunifuDatepicker1.Value = DateTime.Now;
+            dataGridView11.Columns["Date"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
 
         public ComboBox mycombox1 { get; internal set; }
@@ -36,6 +38,7 @@ namespace Pharmacy.PL
 
         private void BtnAddNew_Click(object sender, EventArgs e)
         {
+            LinkDtataToPL.FillProductsComboBox(this);
             myComboBox11.Show();
             myComboBox11.BringToFront();
         }
@@ -49,7 +52,12 @@ namespace Pharmacy.PL
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
+            LinkDtataToPL.Save_Invoice(this);
+        }
 
+        private void dataGridView11_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            LinkDtataToPL.UpdateTotalPrices(sender,e);
         }
     }
 }

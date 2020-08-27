@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bunifu.Framework.UI;
 
 namespace Pharmacy.PL
 {
@@ -76,6 +77,20 @@ namespace Pharmacy.PL
         }
 
 
+        public static void RemoveTextBunifu(object sender, EventArgs e)
+        {
+            BunifuMetroTextbox myTxtbx = (BunifuMetroTextbox)sender;
+            if (myTxtbx.Text == myTxtbx.Tag.ToString())
+            {
+                myTxtbx.Text = "";
+            }
+        }
+        public static void AddTextBunifu(object sender, EventArgs e)
+        {
+            BunifuMetroTextbox myTxtbx = (BunifuMetroTextbox)sender;
+            if (string.IsNullOrWhiteSpace(myTxtbx.Text))
+                myTxtbx.Text = myTxtbx.Tag.ToString();
+        }
         public static void RemoveText(object sender, EventArgs e)
         {
             TextBox myTxtbx = (TextBox)sender;
@@ -84,7 +99,6 @@ namespace Pharmacy.PL
                 myTxtbx.Text = "";
             }
         }
-
         public static void AddText(object sender, EventArgs e)
         {
             TextBox myTxtbx = (TextBox)sender;

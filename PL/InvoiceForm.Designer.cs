@@ -51,7 +51,7 @@
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublicPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelDataGridView.SuspendLayout();
@@ -114,12 +114,12 @@
             this.LblSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblSupplier.AutoSize = true;
-            this.LblSupplier.Font = new System.Drawing.Font("Century Gothic", 31.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSupplier.Font = new System.Drawing.Font("Century Gothic", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.LblSupplier.Location = new System.Drawing.Point(489, 52);
+            this.LblSupplier.Location = new System.Drawing.Point(489, 42);
             this.LblSupplier.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSupplier.Name = "LblSupplier";
-            this.LblSupplier.Size = new System.Drawing.Size(349, 63);
+            this.LblSupplier.Size = new System.Drawing.Size(328, 59);
             this.LblSupplier.TabIndex = 13;
             this.LblSupplier.Text = "New Invoice";
             // 
@@ -215,7 +215,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(237, 242);
+            this.comboBox1.Location = new System.Drawing.Point(237, 266);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(356, 31);
             this.comboBox1.TabIndex = 21;
@@ -226,7 +226,7 @@
             this.labelSupplier.BackColor = System.Drawing.SystemColors.Control;
             this.labelSupplier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(49)))), ((int)(((byte)(53)))));
-            this.labelSupplier.Location = new System.Drawing.Point(120, 246);
+            this.labelSupplier.Location = new System.Drawing.Point(120, 270);
             this.labelSupplier.Name = "labelSupplier";
             this.labelSupplier.Size = new System.Drawing.Size(98, 23);
             this.labelSupplier.TabIndex = 20;
@@ -279,7 +279,7 @@
             this.Date,
             this.VAT,
             this.Quantity,
-            this.PublicPrice,
+            this.Price,
             this.Discount,
             this.TotalPrice});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -311,6 +311,7 @@
             this.dataGridView11.RowTemplate.Height = 50;
             this.dataGridView11.Size = new System.Drawing.Size(1210, 426);
             this.dataGridView11.TabIndex = 6;
+            this.dataGridView11.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView11_CellValueChanged);
             // 
             // ProductID
             // 
@@ -332,12 +333,14 @@
             // 
             // Date
             // 
+            this.Date.DataPropertyName = "Date";
             this.Date.HeaderText = "Date";
             this.Date.MinimumWidth = 6;
             this.Date.Name = "Date";
             // 
             // VAT
             // 
+            this.VAT.DataPropertyName = "VAT";
             this.VAT.FillWeight = 60F;
             this.VAT.HeaderText = "VAT";
             this.VAT.MinimumWidth = 6;
@@ -345,18 +348,19 @@
             // 
             // Quantity
             // 
+            this.Quantity.DataPropertyName = "Quantity";
             this.Quantity.FillWeight = 70F;
             this.Quantity.HeaderText = "Quantity";
             this.Quantity.MinimumWidth = 6;
             this.Quantity.Name = "Quantity";
             // 
-            // PublicPrice
+            // Price
             // 
-            this.PublicPrice.DataPropertyName = "Price";
-            this.PublicPrice.HeaderText = "Public Price";
-            this.PublicPrice.MinimumWidth = 6;
-            this.PublicPrice.Name = "PublicPrice";
-            this.PublicPrice.ReadOnly = true;
+            this.Price.DataPropertyName = "Price";
+            this.Price.HeaderText = "Public Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
             // 
             // Discount
             // 
@@ -367,6 +371,7 @@
             // 
             // TotalPrice
             // 
+            this.TotalPrice.DataPropertyName = "TotalPrice";
             this.TotalPrice.FillWeight = 150F;
             this.TotalPrice.HeaderText = "Total Price";
             this.TotalPrice.MinimumWidth = 6;
@@ -407,23 +412,23 @@
 
         public Controls.DataGridView1 dataGridView11;
         private System.Windows.Forms.Panel panelDataGridView;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.Label LblDateTime;
         private System.Windows.Forms.Label LblInvoice;
         private System.Windows.Forms.Label LblSupplier;
-        private Bunifu.Framework.UI.BunifuMetroTextbox Textbox1ID;
         private System.Windows.Forms.Button button2;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnAddNew;
         private Bunifu.Framework.UI.BunifuThinButton2 BtnSave;
         private System.Windows.Forms.Label labelSupplier;
         public System.Windows.Forms.ComboBox comboBox1;
         public Controls.MyComboBox1 myComboBox11;
+        public Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        public Bunifu.Framework.UI.BunifuMetroTextbox Textbox1ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Product;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn VAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublicPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
     }

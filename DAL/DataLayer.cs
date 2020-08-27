@@ -231,5 +231,10 @@ namespace Pharmacy.DAL
             }
             else return null;
         }
+
+        internal object GetValue(string v, object @params)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
